@@ -17,7 +17,7 @@ Readonly::Scalar my $ANTIKVARIAT11_CZ => 'http://antikvariat11.cz';
 Readonly::Scalar my $ANTIKVARIAT11_CZ_ACTION1 => '/hledani';
 
 # Version.
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Setup.
 sub native_setup_search {
@@ -217,6 +217,6 @@ BSD license.
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
