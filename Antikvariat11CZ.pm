@@ -6,13 +6,10 @@ use strict;
 use warnings;
 
 # Modules.
-use Encode qw(decode_utf8 encode_utf8);
 use HTTP::Cookies;
 use LWP::UserAgent;
 use Readonly;
-use Text::Iconv;
 use Web::Scraper;
-use WWW::Search qw(generic_option);
 
 # Constants.
 Readonly::Scalar our $MAINTAINER => 'Michal Spacek <skim@cpan.org>';
