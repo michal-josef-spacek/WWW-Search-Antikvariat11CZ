@@ -113,3 +113,110 @@ sub _fix_url {
 1;
 
 __END__
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+WWW::Search::Antikvariat11CZ - Class for searching http://antikvariat11.cz .
+
+=head1 SYNOPSIS
+
+ use WWW::Search::Antikvariat11CZ;
+ my $obj = WWW::Search->new('Antikvariat11CZ');
+ $obj->native_query($query);
+ my $maintainer = $obj->maintainer; 
+ my $res_hr = $obj->next_result;
+ my $version = $obj->version;
+
+=head1 METHODS
+
+=over 8
+
+=item C<native_setup_search($query)>
+
+ Setup.
+
+=item C<native_retrieve_some()>
+
+ Get data.
+
+=back
+
+=head1 EXAMPLE
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Data::Printer;
+ use WWW::Search::Antikvariat11CZ;
+
+ # Arguments.
+ if (@ARGV < 1) {
+         print STDERR "Usage: $0 match\n";
+         exit 1;
+ }
+ my $match = $ARGV[0];
+
+ # Object.
+ my $obj = WWW::Search->new('Antikvariat11CZ');
+ $obj->maximum_to_retrieve(1);
+
+ # Search.
+ $obj->native_query($match);
+ while (my $result_hr = $obj->next_result) {
+        p $result_hr;
+ }
+
+ # Output:
+ # Usage: /tmp/1Ytv23doz5 match
+
+ # Output with 'Čapek' argument:
+ # \ {
+ #     author          "Karel Čapek",
+ #     category        "Pohádky / Dětské",
+ #     detailed_link   "http://antikvariat11.cz/kniha/capek-karel-devatero-pohadek-a-jeste-jedna-jako-privazek-od-josefa-capka-1977-319041",
+ #     illustrator     "Čapek, Josef",
+ #     image           "http://antikvariat11.cz/files/thumb_36885.png",
+ #     pages           "242 s.",
+ #     price           "55 Kč",
+ #     stay            "Výborná originální vazba",
+ #     title           "Devatero pohádek a ještě jedna jako přívažek od Josefa Čapka",
+ #     year_issued     1977
+ # }
+
+=head1 DEPENDENCIES
+
+L<HTTP::Cookies>,
+L<LWP::UserAgent>,
+L<Readonly>,
+L<Web::Scraper>,
+L<WWW::Search>.
+
+=head1 SEE ALSO
+
+L<WWW::Search>.
+
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/WWW-Search-Antikvariat11CZ>
+
+=head1 AUTHOR
+
+Michal Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
+
+=head1 LICENSE AND COPYRIGHT
+
+BSD license.
+
+=head1 VERSION
+
+0.01
+
+=cut
