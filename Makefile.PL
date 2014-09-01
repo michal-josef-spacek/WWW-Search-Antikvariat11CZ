@@ -11,13 +11,12 @@ author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'WWW-Search-Antikvariat11CZ';
 readme_from 'Antikvariat11CZ.pm';
-#requires 'Encode' => 0,
-#requires 'LWP::UserAgent' => 0;
-#requires 'Readonly' => 0;
-#requires 'Text::Iconv' => 0;
-#requires 'Web::Scraper' => 0;
-#requires 'WWW::Search' => 0;
-requires 'perl' => '5.6.2';
+requires 'HTTP::Cookies' => 0;
+requires 'LWP::UserAgent' => 0;
+requires 'Readonly' => 0;
+requires 'Web::Scraper' => 0;
+requires 'WWW::Search' => 0;
+requires 'perl' => '5.6.0';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=WWW-Search-Antikvariat11CZ';
 resources 'homepage' => 'https://github.com/tupinek/WWW-Search-Antikvariat11CZ';
