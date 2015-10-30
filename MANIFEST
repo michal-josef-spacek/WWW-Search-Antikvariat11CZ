@@ -2,6 +2,8 @@ Antikvariat11CZ.pm
 Changes
 examples/ex1.pl
 inc/Module/Install.pm
+inc/Module/Install/AuthorRequires.pm
+inc/Module/Install/AuthorTests.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
@@ -17,7 +19,7 @@ META.yml
 README
 SIGNATURE
 t/data/2014_09_01.html
-t/WWW-Search-Antikvariat11CZ/00-use.t
-t/WWW-Search-Antikvariat11CZ/01-version.t
-t/WWW-Search-Antikvariat11CZ/02-pod_coverage.t
-t/WWW-Search-Antikvariat11CZ/03-pod.t
+t/WWW-Search-Antikvariat11CZ/01-use.t
+t/WWW-Search-Antikvariat11CZ/02-version.t
+xt/WWW-Search-Antikvariat11CZ/01-pod_coverage.t
+xt/WWW-Search-Antikvariat11CZ/02-pod.t
