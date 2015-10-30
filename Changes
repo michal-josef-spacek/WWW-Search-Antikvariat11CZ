@@ -3,6 +3,7 @@
  - Improve SEE ALSO section in doc.
  - Move author tests to xt/ directory.
  - Remove diacritics from author name in Makefile.PL.
+ - Rename test data file.
  - Update Module::Install to 1.16 version.
  - Update copyright years.
 

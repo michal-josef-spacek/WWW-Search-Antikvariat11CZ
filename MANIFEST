@@ -18,7 +18,7 @@ MANIFEST			This list of files
 META.yml
 README
 SIGNATURE
-t/data/2014_09_01.html
+t/data/antikvariat_cz-20140901-Capek.html
 t/WWW-Search-Antikvariat11CZ/01-use.t
 t/WWW-Search-Antikvariat11CZ/02-version.t
 xt/WWW-Search-Antikvariat11CZ/01-pod_coverage.t
