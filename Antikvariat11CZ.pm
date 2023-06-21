@@ -1,11 +1,9 @@
 package WWW::Search::Antikvariat11CZ;
 
-# Pragmas.
 use base qw(WWW::Search);
 use strict;
 use warnings;
 
-# Modules.
 use HTTP::Cookies;
 use LWP::UserAgent;
 use Readonly;
@@ -16,7 +14,6 @@ Readonly::Scalar our $MAINTAINER => 'Michal Spacek <skim@cpan.org>';
 Readonly::Scalar my $ANTIKVARIAT11_CZ => 'http://antikvariat11.cz';
 Readonly::Scalar my $ANTIKVARIAT11_CZ_ACTION1 => '/hledani';
 
-# Version.
 our $VERSION = 0.02;
 
 # Setup.
@@ -147,11 +144,9 @@ WWW::Search::Antikvariat11CZ - Class for searching http://antikvariat11.cz .
 
 =head1 EXAMPLE
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Data::Printer;
  use WWW::Search::Antikvariat11CZ;
 

@@ -1,8 +1,6 @@
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use WWW::Search::Antikvariat11CZ;
 use Test::More 'tests' => 2;
 use Test::NoWarnings;

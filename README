@@ -18,11 +18,9 @@ METHODS
              Get data.
 
 EXAMPLE
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use Data::Printer;
      use WWW::Search::Antikvariat11CZ;
 
