@@ -4,7 +4,7 @@
  - Move author tests to xt/ directory.
  - Remove diacritics from author name in Makefile.PL.
  - Rename test data file.
- - Update Module::Install to 1.16 version.
+ - Update Module::Install to 1.21 version.
  - Update copyright years.
 
 0.01 2014-09-02T00:58:08+02:00
